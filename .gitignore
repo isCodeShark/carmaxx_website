@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Vercel (project link + local env with OIDC token — never commit)
+.vercel
+.env.local
+*.env.local
+
+# Node
+node_modules/
+
+# Claude Code local (personal) settings
+.claude/settings.local.json

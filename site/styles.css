@@ -1,0 +1,218 @@
+
+  html, body { margin:0; padding:0; background:#FBFBFD; }
+  body { font-family:'Schibsted Grotesk', Helvetica, Arial, sans-serif; color:#0B1220; -webkit-font-smoothing:antialiased; }
+  * { box-sizing:border-box; }
+  a { color:#0644CC; text-decoration:none; }
+  a:hover { color:#0533A0; }
+  p { text-wrap:pretty; }
+  img, svg, iframe { max-width:100%; }
+  @media (max-width: 1100px) and (min-width: 901px) {
+    #claim-steps { grid-template-columns:1fr 1fr !important; }
+  }
+  @media (max-width: 1100px) and (min-width: 901px) {
+    main h1 { font-size:42px !important; }
+  }
+  @media (max-width: 900px) {
+    main h1 span { font-size:22px !important; }
+    #claim-steps { grid-template-columns:1fr !important; gap:14px !important; }
+    #rc-box { height:180px !important; }
+    #rc-metrics { grid-template-columns:1fr 1fr 1fr !important; gap:6px !important; }
+    #rc-metrics > div { padding:11px 9px !important; min-width:0; }
+    #rc-metrics > div > div:last-child { font-size:16px !important; }
+    #rc-time-row { flex-wrap:wrap; gap:8px; }
+    #rc-time-row label { width:100%; }
+    body { overflow-x:hidden; }
+    main [style*="grid-template-columns"], footer [style*="grid-template-columns"] { grid-template-columns:1fr !important; gap:26px !important; }
+    /* let collapsed-grid children shrink below their content min-width so a wide
+       child (e.g. the hero chart card) can't push the track past the viewport */
+    main [style*="grid-template-columns"] > *, footer [style*="grid-template-columns"] > * { min-width:0; }
+    main section[style*="margin:0 auto"], main section > div[style*="margin:0 auto"], footer > div > div { padding-left:20px !important; padding-right:20px !important; }
+    main div[style*="position:sticky"] { position:static !important; }
+    main h1 { font-size:34px !important; }
+    main h2 { font-size:25px !important; }
+    header > div { height:auto !important; flex-wrap:wrap; padding:12px 20px !important; gap:12px; }
+    header nav { order:3; width:100%; gap:20px !important; font-size:14px !important; overflow-x:auto; padding-bottom:2px; }
+    header > div > div:last-child > a[href^="tel"] { display:none; }
+    body > div > div:first-child > div { flex-direction:column !important; align-items:flex-start !important; gap:10px !important; padding-left:20px !important; padding-right:20px !important; }
+    body > div > div:first-child > div > div { flex-direction:column !important; align-items:flex-start !important; gap:10px !important; }
+    body > div > div:first-child a[href*="portal.carmaxx"] { display:none !important; }
+  }
+
+  @media (max-width: 360px) {
+    /* very small phones: keep the 3 hero metric figures from clipping */
+    #rc-metrics { gap:5px !important; }
+    #rc-metrics > div { padding:9px 7px !important; }
+    #rc-metrics > div > div:first-child { font-size:11px !important; }
+    #rc-metrics > div > div:last-child { font-size:13px !important; }
+  }
+
+.x1:hover { color:#8FB4FF !important }
+.x2:hover { color:#FFFFFF !important }
+.x3:hover { color:#FFFFFF !important }
+.x4:hover { color:#8FB4FF !important }
+.x5:hover { color:#0644CC !important }
+.x6:hover { color:#0644CC !important }
+.x7:hover { color:#0644CC !important }
+.x8:hover { color:#0644CC !important }
+.x9:hover { color:#0644CC !important }
+.x10:hover { background:#0533A0 !important; color:#FFFFFF !important }
+.x11:hover { background:#0533A0 !important; color:#FFFFFF !important }
+.x12:hover { border-color:#0644CC !important; color:#0644CC !important }
+.x13:hover { background:#0533A0 !important; color:#FFFFFF !important }
+.x14:hover { border-color:#0644CC !important; color:#0644CC !important }
+.x15:hover { color:#FFFFFF !important }
+.x16:hover { color:#FFFFFF !important }
+.x17:hover { color:#FFFFFF !important }
+.x18:hover { color:#FFFFFF !important }
+.x19:hover { color:#FFFFFF !important }
+.x20:hover { color:#FFFFFF !important }
+.x21:hover { color:#FFFFFF !important }
+.x22:hover { color:#FFFFFF !important }
+.x23:hover { color:#FFFFFF !important }
+.x24:hover { color:#FFFFFF !important }
+.x25:hover { color:#FFFFFF !important }
+.x26:hover { color:#8FB4FF !important }
+.x27:hover { color:#FFFFFF !important }
+.x28:hover { color:#FFFFFF !important }
+.x29:hover { color:#8FB4FF !important }
+.x30:hover { color:#0644CC !important }
+.x31:hover { color:#0644CC !important }
+.x32:hover { color:#0644CC !important }
+.x33:hover { color:#0644CC !important }
+.x34:hover { color:#0644CC !important }
+.x35:hover { background:#0533A0 !important; color:#FFFFFF !important }
+.x36:hover { color:#FFFFFF !important }
+.x37:hover { color:#FFFFFF !important }
+.x38:hover { color:#FFFFFF !important }
+.x39:hover { color:#FFFFFF !important }
+.x40:hover { color:#FFFFFF !important }
+.x41:hover { color:#FFFFFF !important }
+.x42:hover { color:#FFFFFF !important }
+.x43:hover { color:#FFFFFF !important }
+.x44:hover { color:#FFFFFF !important }
+.x45:hover { color:#FFFFFF !important }
+.x46:hover { color:#FFFFFF !important }
+.x47:hover { color:#8FB4FF !important }
+.x48:hover { color:#FFFFFF !important }
+.x49:hover { color:#FFFFFF !important }
+.x50:hover { color:#8FB4FF !important }
+.x51:hover { color:#0644CC !important }
+.x52:hover { color:#0644CC !important }
+.x53:hover { color:#0644CC !important }
+.x54:hover { color:#0644CC !important }
+.x55:hover { color:#0644CC !important }
+.x56:hover { background:#0533A0 !important; color:#FFFFFF !important }
+.x57:hover { background:#DDE7FB !important; color:#071A3D !important }
+.x58:hover { color:#FFFFFF !important }
+.x59:hover { color:#FFFFFF !important }
+.x60:hover { color:#FFFFFF !important }
+.x61:hover { color:#FFFFFF !important }
+.x62:hover { color:#FFFFFF !important }
+.x63:hover { color:#FFFFFF !important }
+.x64:hover { color:#FFFFFF !important }
+.x65:hover { color:#FFFFFF !important }
+.x66:hover { color:#FFFFFF !important }
+.x67:hover { color:#FFFFFF !important }
+.x68:hover { color:#FFFFFF !important }
+.x69:hover { color:#8FB4FF !important }
+.x70:hover { color:#FFFFFF !important }
+.x71:hover { color:#FFFFFF !important }
+.x72:hover { color:#8FB4FF !important }
+.x73:hover { color:#0644CC !important }
+.x74:hover { color:#0644CC !important }
+.x75:hover { color:#0644CC !important }
+.x76:hover { color:#0644CC !important }
+.x77:hover { color:#0644CC !important }
+.x78:hover { background:#0533A0 !important; color:#FFFFFF !important }
+.x79:hover { color:#FFFFFF !important }
+.x80:hover { color:#FFFFFF !important }
+.x81:hover { color:#FFFFFF !important }
+.x82:hover { color:#FFFFFF !important }
+.x83:hover { color:#FFFFFF !important }
+.x84:hover { color:#FFFFFF !important }
+.x85:hover { color:#FFFFFF !important }
+.x86:hover { color:#FFFFFF !important }
+.x87:hover { color:#FFFFFF !important }
+.x88:hover { color:#FFFFFF !important }
+.x89:hover { color:#FFFFFF !important }
+.x90:hover { color:#8FB4FF !important }
+.x91:hover { color:#FFFFFF !important }
+.x92:hover { color:#FFFFFF !important }
+.x93:hover { color:#8FB4FF !important }
+.x94:hover { color:#0644CC !important }
+.x95:hover { color:#0644CC !important }
+.x96:hover { color:#0644CC !important }
+.x97:hover { color:#0644CC !important }
+.x98:hover { color:#0644CC !important }
+.x99:hover { background:#0533A0 !important; color:#FFFFFF !important }
+.x100:focus { border-color:#0644CC !important }
+.x101:focus { border-color:#0644CC !important }
+.x102:focus { border-color:#0644CC !important }
+.x103:focus { border-color:#0644CC !important }
+.x104:focus { border-color:#0644CC !important }
+.x105:hover { color:#0B1220 !important }
+.x106:hover { color:#0B1220 !important }
+.x107:hover { color:#0B1220 !important }
+.x108:hover { background:#0533A0 !important }
+.x109:hover { color:#FFFFFF !important }
+.x110:hover { color:#FFFFFF !important }
+.x111:hover { color:#FFFFFF !important }
+.x112:hover { color:#FFFFFF !important }
+.x113:hover { color:#FFFFFF !important }
+.x114:hover { color:#FFFFFF !important }
+.x115:hover { color:#FFFFFF !important }
+.x116:hover { color:#FFFFFF !important }
+.x117:hover { color:#FFFFFF !important }
+.x118:hover { color:#FFFFFF !important }
+.x119:hover { color:#FFFFFF !important }
+.x120:hover { color:#8FB4FF !important }
+.x121:hover { color:#FFFFFF !important }
+.x122:hover { color:#FFFFFF !important }
+.x123:hover { color:#8FB4FF !important }
+.x124:hover { color:#0644CC !important }
+.x125:hover { color:#0644CC !important }
+.x126:hover { color:#0644CC !important }
+.x127:hover { color:#0644CC !important }
+.x128:hover { color:#0644CC !important }
+.x129:hover { background:#0533A0 !important; color:#FFFFFF !important }
+.x130:focus { border-color:#0644CC !important }
+.x131:focus { border-color:#0644CC !important }
+.x132:focus { border-color:#0644CC !important }
+.x133:focus { border-color:#0644CC !important }
+.x134:focus { border-color:#0644CC !important }
+.x135:hover { background:#0533A0 !important }
+.x136:hover { color:#FFFFFF !important }
+.x137:hover { color:#FFFFFF !important }
+.x138:hover { color:#FFFFFF !important }
+.x139:hover { color:#FFFFFF !important }
+.x140:hover { color:#FFFFFF !important }
+.x141:hover { color:#FFFFFF !important }
+.x142:hover { color:#FFFFFF !important }
+.x143:hover { color:#FFFFFF !important }
+.x144:hover { color:#FFFFFF !important }
+.x145:hover { color:#FFFFFF !important }
+.x146:hover { color:#FFFFFF !important }
+.x147:hover { color:#8FB4FF !important }
+.x148:hover { color:#FFFFFF !important }
+.x149:hover { color:#FFFFFF !important }
+.x150:hover { color:#8FB4FF !important }
+.x151:hover { color:#0644CC !important }
+.x152:hover { color:#0644CC !important }
+.x153:hover { color:#0644CC !important }
+.x154:hover { color:#0644CC !important }
+.x155:hover { color:#0644CC !important }
+.x156:hover { background:#0533A0 !important; color:#FFFFFF !important }
+.x157:hover { color:#FFFFFF !important }
+.x158:hover { color:#FFFFFF !important }
+.x159:hover { color:#FFFFFF !important }
+.x160:hover { color:#FFFFFF !important }
+.x161:hover { color:#FFFFFF !important }
+.x162:hover { color:#FFFFFF !important }
+.x163:hover { color:#FFFFFF !important }
+.x164:hover { color:#FFFFFF !important }
+.x165:hover { color:#FFFFFF !important }
+.x166:hover { color:#FFFFFF !important }
+.x167:hover { color:#FFFFFF !important }
+.qcta:hover { background:#0533A0 !important; color:#FFFFFF !important; }
+.vt { background: transparent; color:#5A6478; font-weight:500; }
+.vt.on { background:#FFFFFF; color:#0644CC; font-weight:600; box-shadow:0 1px 3px rgba(11,18,32,0.14); }
